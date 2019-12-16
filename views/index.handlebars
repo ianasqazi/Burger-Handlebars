@@ -1,69 +1,70 @@
-<h1>Burgers App</h1>
+<div class="container-fluid">
+    <div class="row text-center">
+        <img src="../public/assets/images/hexi.psd">
 
-<p>BURGERIZER</p>
-
-<!-- Pass in data from server.js -->
-{{!-- <ul>
-  {{#each burgers}}
-  {{#if devoured}}
-  	<li>
-  		<span class="label">ID:</span> {{this.id}}
-        <span class="label">NAME:</span> {{this.burger_name}}
-        <span class="label">devoured:</span> {{this.devoured}}
-
-        <button data-id="{{this.id}}" class="delquote">Delete</button>
-
-        <a href="/{{this.id}}">DEVOUR</a>
-  	</li>
-      {{/if}}
-  {{/each}}
-</ul> --}}
-
-<div id="devouredBurger">
-    <div>
-        <h5>DEVOURED BURGERS</h5>
-    </div>
-    <div>
-        <ul>
-            {{#each burgers}}
-                {{#if devoured}}
-                    <li>       
-                        {{this.burger_name}}
-                        {{!-- <button data-id="{{this.id}}" class="delquote">Delete</button> --}}
-                    </li>
-                {{/if}}
-            {{/each}}
-        </ul>
-    </div>
-</div>
-
-<div id="notDevouredBurger">
-    <div>
-        <h5>NOT DEVOURED BURGERS</h5>
-    </div>
-    <div>
-        <ul>
-            {{#each burgers}}
-                {{#unless devoured}}
-                    <li>       
-                        {{this.burger_name}}
-                        {{!-- <button data-id="{{this.id}}" class="delquote">Delete</button> --}}
-                        <a href="/{{this.id}}">DEVOUR</a>
-                    </li>
-                {{/unless}}
-            {{/each}}
-        </ul>
+        <h1>BURGERIZER</h1>
     </div>
 </div>
 
 {{!-- ===================================== --}}
-<h2>Add a Burger</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div id="devouredBurger" class="col">
+            <div>
+                <h5>DEVOURED BURGERS</h5>
+            </div>
+            <div>
+                <ul>
+                    {{#each burgers}}
+                        {{#if devoured}}
+                            <li>       
+                                {{this.burger_name}}
+                            </li>
+                        {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
 
-<form class="create-form">
+        <div id="notDevouredBurger" class="col">
+            <div>
+                <h5>NOT DEVOURED BURGERS</h5>
+            </div>
+            <div>
+                <ul>
+                    {{#each burgers}}
+                        {{#unless devoured}}
+                            <li>       
+                                {{this.burger_name}}
+                                <button data-id="{{this.id}}" class="devourIt">DEVOUR BURGER</button>
+                            </li>
+                        {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <div class="form-group">
-    <label for="burgerName">Burger NAME:</label>
-    <input type="text" id="burgerName" name="burgerName">
+{{!-- ===================================== --}}
+<div class="container-fluid">
 
-  <button type="submit" id="newBurger">Add Burger</button>
-</form>
+    <div class="row text-center">
+        <h2>Add a Burger</h2>
+    </div>
+
+    <div class="row">
+        <form class="create-form">
+
+        <div class="form-group">
+            <label for="burgerName">NAME:</label>
+            <input type="text" id="burgerName" name="burgerName">
+
+        <button type="submit" id="newBurger">Add Burger</button>
+        </form>
+    </div>
+
+
+</div>
+
+
