@@ -3,3 +3,12 @@
 h1{
     color: red;
 }
+
+.container-fluid{
+    width: 100%;
+}
+
+#addBurgerBlock{
+    margin: auto;
+    width: auto;
+}
