@@ -13,10 +13,10 @@ To run this file, we do the following in our Terminal:
 -- Insert into burgers a set of records.
 INSERT INTO burgers (burger_name) VALUES ('The Krusty Burger');
 INSERT INTO burgers (burger_name) VALUES ('The Ghost Burger');
-INSERT INTO burgers (burger_name) VALUES ('The Varsity Burger');
+INSERT INTO burgers (burger_name,devoured) VALUES ('The Varsity Burger', TRUE);
 INSERT INTO burgers (burger_name) VALUES ('The White Castle Slider');
 INSERT INTO burgers (burger_name) VALUES ('The Rays Hell Burger');
-INSERT INTO burgers (burger_name) VALUES ('The Ramen Burger');
+INSERT INTO burgers (burger_name,devoured) VALUES ('The Ramen Burger', TRUE);
 INSERT INTO burgers (burger_name) VALUES ('The Jucy Lucy');
-INSERT INTO burgers (burger_name) VALUES ('The Lab-Grown Burger');
+INSERT INTO burgers (burger_name,devoured) VALUES ('The Lab-Grown Burger', TRUE);
 INSERT INTO burgers (burger_name) VALUES ('The Quadruple Bypass Burger');
