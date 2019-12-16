@@ -1,15 +1,29 @@
-<div class="container-fluid">
-    <div class="row text-center">
-        <img src="../public/assets/images/hexi.psd">
 
-        <h1>BURGERIZER</h1>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img class="img-fluid" src="/assets/images/burger.png">
+            </div>
+        </div>
     </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <h1>BURGERIZER</h1>
+            </div>
+        </div>
+    </div>
+     
 </div>
 
 {{!-- ===================================== --}}
 <div class="container-fluid">
     <div class="row">
-        <div id="devouredBurger" class="col">
+        <div id="devouredBurger" class="col-4 col-md-6">
             <div>
                 <h5>DEVOURED BURGERS</h5>
             </div>
@@ -26,7 +40,7 @@
             </div>
         </div>
 
-        <div id="notDevouredBurger" class="col">
+        <div id="notDevouredBurger" class="col-4 col-md-6">
             <div>
                 <h5>NOT DEVOURED BURGERS</h5>
             </div>
@@ -36,7 +50,7 @@
                         {{#unless devoured}}
                             <li>       
                                 {{this.burger_name}}
-                                <button data-id="{{this.id}}" class="devourIt">DEVOUR BURGER</button>
+                                <button data-id="{{this.id}}" class="devourIt btn btn-dark  btn-sm">DEVOUR IT</button>
                             </li>
                         {{/unless}}
                     {{/each}}
@@ -47,9 +61,9 @@
 </div>
 
 {{!-- ===================================== --}}
-<div class="container-fluid">
+<div class="container-fluid" id="addBurgerBlock">
 
-    <div class="row text-center">
+    <div class="row">
         <h2>Add a Burger</h2>
     </div>
 
