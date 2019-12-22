@@ -88,6 +88,11 @@ NOTE : Kindly update the connection link in /public/initialize.js file to the co
 │           └── script.js
 │
 └── views
+│   └── layouts
+│       ├── main.handlebars
+│   └── index.handlebars
+
+│       │   └── style.css
 │├── layouts
 │    │   └── main.handlebars
 │  		└── index.handlebars
