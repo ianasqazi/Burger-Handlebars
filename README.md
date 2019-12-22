@@ -41,10 +41,9 @@ npm --version
 
 ### NPM Packages
 
-- INQUIRER -- prompt CLI questions 
+- EXPRESS -- prompt CLI questions 
+- EXPRESS-HANDLEBARS -- easily pre-compile templates of HTML
 - MYSQL -- Database to INSERT/UPDATE/DELETE 
-- ASCIIART-LOGO -- Intro Logo Headers
-- CONSOLE-TABLE-PRINTER -- Table formatting in CLI
 
 ### Database Instance
 
@@ -59,7 +58,7 @@ NOTE : Kindly update the connection link in /public/initialize.js file to the co
 
 ## Folder Structure
 
-```javascript
+```bash
 ├── config
 │   ├── connection.js
 │   └── orm.js
