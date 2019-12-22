@@ -91,11 +91,6 @@ NOTE : Kindly update the connection link in /public/initialize.js file to the co
 │   └── layouts
 │       ├── main.handlebars
 │   └── index.handlebars
-
-│       │   └── style.css
-│├── layouts
-│    │   └── main.handlebars
-│  		└── index.handlebars
 │   
 ├── screenshots
 │   └── burger-screenshot.png
