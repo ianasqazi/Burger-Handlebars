@@ -1,4 +1,5 @@
 
+{{!-- =========== HEADER ============= --}}
 
 <div class="container-fluid">
 
@@ -20,9 +21,27 @@
      
 </div>
 
-{{!-- ===================================== --}}
+{{!-- =========== DISPLAY BURGERS ============= --}}
 <div class="container-fluid">
     <div class="row">
+
+        <div id="notDevouredBurger" class="col-md-6 d-flex justify-content-center">
+            <div>
+                <h5>YOUR LIST OF BURGERS</h5>
+            {{!-- </div>
+            <div> --}}
+                <ul>
+                    {{#each burgers}}
+                        {{#unless devoured}}
+                            <li>       
+                                {{this.burger_name}}
+                                <button data-id="{{this.id}}" class="devourIt">DEVOUR IT</button>
+                            </li>
+                        {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
 
         <div id="devouredBurger" class="col-md-6 d-flex justify-content-center">
             <div>
@@ -41,28 +60,11 @@
             </div>
         </div>
 
-        <div id="notDevouredBurger" class="col-md-6 d-flex justify-content-center">
-            <div>
-                <h5>NOT DEVOURED BURGERS</h5>
-            {{!-- </div>
-            <div> --}}
-                <ul>
-                    {{#each burgers}}
-                        {{#unless devoured}}
-                            <li>       
-                                {{this.burger_name}}
-                                <button data-id="{{this.id}}" class="devourIt">DEVOUR IT</button>
-                            </li>
-                        {{/unless}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-
     </div>
 </div>
 
-{{!-- ===================================== --}}
+{{!-- =========== ADD BURGER Section ============= --}}
+
 <div class="container-fluid" id="addBurgerBlock">
 
     <div class="row">
