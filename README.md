@@ -89,8 +89,8 @@ NOTE : Kindly update the connection link in /public/initialize.js file to the co
 │
 └── views
 │				├── layouts
-│       │   └── main.handlebars
-│  			└── index.handlebars
+│    │   └── main.handlebars
+│  		└── index.handlebars
 │   
 ├── screenshots
 │   └── burger-screenshot.png
