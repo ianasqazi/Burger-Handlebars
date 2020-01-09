@@ -1,0 +1,17 @@
+language: javascript
+
+npm: true
+
+cache:
+  directories:
+  - node_modules
+ script:
+   - npm run lint
+   - npm run install
+deploy:
+  provider: heroku
+  api_key: 
+    secure: {ed9dfeb9-3302-427a-9b21-c44a919e37b3}
+  app: burgerizer
+  on:
+    repo: (https://github.com/ianasqazi/Burger-Handlebars)
